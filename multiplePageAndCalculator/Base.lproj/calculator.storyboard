@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Qw-7i-8U0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="multiplePageAndCalculator" customModuleProvider="target" sceneMemberID="viewController">
@@ -45,23 +45,22 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Main" image="square.and.arrow.up.fill" catalog="system" id="buO-ds-9pz"/>
                     <connections>
                         <outlet property="retutnNumber" destination="vwz-yY-KAy" id="F2W-Ky-wfG"/>
-                        <segue destination="mJX-62-ihn" kind="show" identifier="showSecondPage" id="J2q-xf-ZPc"/>
+                        <segue destination="QUg-qf-wdQ" kind="show" identifier="showSecondPage" id="J2q-xf-ZPc"/>
                         <segue destination="ybS-KC-C7m" kind="show" identifier="showThirdPage" id="Tx1-Rc-u7N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="938.46153846153845" y="-27.014218009478672"/>
+            <point key="canvasLocation" x="10" y="-27"/>
         </scene>
         <!--Page2 View Controller-->
         <scene sceneID="WMJ-Q0-G8W">
             <objects>
                 <viewController id="QUg-qf-wdQ" customClass="page2ViewController" customModule="multiplePageAndCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="64m-dU-Rlk">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERU-uD-cUM">
@@ -303,14 +302,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ufp-3X-CLq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="J4A-dn-OA4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2793.8461538461538" y="-27.014218009478672"/>
+            <point key="canvasLocation" x="797.70992366412213" y="-27.464788732394368"/>
         </scene>
         <!--List-->
         <scene sceneID="qOe-XN-k19">
             <objects>
                 <tableViewController id="n3j-qm-knX" customClass="TableViewController" customModule="multiplePageAndCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="oNK-zG-eQf">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" systemColor="tintColor"/>
@@ -369,7 +368,7 @@
             <objects>
                 <viewController id="bhM-aw-yKe" customClass="DetailViewController" customModule="multiplePageAndCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tQn-ze-JSu">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NlW-om-tdh">
@@ -397,15 +396,14 @@
             </objects>
             <point key="canvasLocation" x="1571.7557251908397" y="719.71830985915494"/>
         </scene>
-        <!--List-->
+        <!--Navigation Controller-->
         <scene sceneID="Cxr-au-WPk">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ybS-KC-C7m" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="List" image="square.and.arrow.up" catalog="system" id="pRG-2g-sjD"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="TqJ-cN-IDc"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6QU-e8-gmQ">
-                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -417,73 +415,8 @@
             </objects>
             <point key="canvasLocation" x="9.9236641221374047" y="719.71830985915494"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="sL8-R5-h1L">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="5Qw-7i-8U0" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Uqi-OI-yMf">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" systemColor="labelColor"/>
-                        <color key="selectedImageTintColor" systemColor="linkColor"/>
-                        <tabBarAppearance key="scrollEdgeAppearance" backgroundEffect="systemMaterialDark">
-                            <tabBarItemAppearance key="stackedLayoutAppearance">
-                                <tabBarItemStateAppearance key="normal">
-                                    <textAttributes key="titleTextAttributes">
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </textAttributes>
-                                </tabBarItemStateAppearance>
-                                <tabBarItemStateAppearance key="selected"/>
-                                <tabBarItemStateAppearance key="disabled"/>
-                                <tabBarItemStateAppearance key="focused"/>
-                            </tabBarItemAppearance>
-                        </tabBarAppearance>
-                    </tabBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="QBI-RY-clb"/>
-                        <segue destination="mJX-62-ihn" kind="relationship" relationship="viewControllers" id="GBC-02-3gc"/>
-                        <segue destination="ybS-KC-C7m" kind="relationship" relationship="viewControllers" id="Sgq-NK-MP6"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AQZ-42-r9o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="9.2307692307692299" y="-27.014218009478672"/>
-        </scene>
-        <!--Calculator-->
-        <scene sceneID="PCm-SK-NTV">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mJX-62-ihn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Calculator" image="square.and.arrow.up.circle.fill" catalog="system" id="o4l-cs-b1f"/>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="TQH-KJ-527"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TaZ-dJ-kUs">
-                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="QUg-qf-wdQ" kind="relationship" relationship="rootViewController" id="AS7-l4-T9t"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lWL-fp-TIP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1864.6153846153845" y="-27.014218009478672"/>
-        </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="GBC-02-3gc"/>
-        <segue reference="Sgq-NK-MP6"/>
-    </inferredMetricsTieBreakers>
     <resources>
-        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
-        <image name="square.and.arrow.up.circle.fill" catalog="system" width="128" height="123"/>
-        <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
